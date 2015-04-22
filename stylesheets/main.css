@@ -5538,13 +5538,13 @@ button.close {
   z-index: 100000; }
 
 .barra-de-navegacion nav {
-  background-color: #C0E3F8;
+  background-color: white;
   z-index: 1000;
   width: 100%; }
   .barra-de-navegacion nav ul {
     list-style: none;
     text-align: right;
-    padding-right: 6%; }
+    padding-right: 4%; }
     .barra-de-navegacion nav ul li {
       display: inline-block;
       position: relative; }
@@ -5552,7 +5552,7 @@ button.close {
 .barra-de-navegacion nav ul li a {
   display: block;
   text-decoration: none;
-  padding: 20px;
+  padding: 10px 15px;
   color: black; }
 
 .barra-de-navegacion nav ul li a span {
@@ -5563,7 +5563,7 @@ button.close {
 
 .barra-de-navegacion nav ul li .children {
   display: none;
-  background: skyblue;
+  background-color: #57c4f1;
   position: absolute;
   width: 150%;
   z-index: 1000;
@@ -5614,19 +5614,19 @@ button.close {
 
 @media screen and (max-width: 800px) {
   body {
-    padding-top: 80px; }
+    padding-top: 40px; }
 
   .menu_bar {
     display: block;
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: #bffbfb; }
+    background-color: #F7F7F7; }
 
   .menu_bar .bt-menu {
     display: block;
-    padding: 20px;
-    color: #fff;
+    padding: 10px;
+    color: black;
     overflow: hidden;
     font-size: 25px;
     font-weight: bold;
@@ -5642,14 +5642,19 @@ button.close {
     position: fixed;
     right: 100%;
     margin: 0;
-    overflow: scroll; }
+    top: 55px;
+    background-color: #57c4f1; }
 
   .barra-de-navegacion nav ul li {
     display: block;
-    border-bottom: 1px dashed rgba(255, 255, 255, 0.5); }
+    border-bottom: 3px dashed rgba(255, 255, 255, 0.5);
+    padding: 10%;
+    text-align: center;
+    font-size: 30px; }
 
   .barra-de-navegacion nav ul li a {
-    display: block; }
+    display: block;
+    color: white; }
 
   .barra-de-navegacion nav ul li:hover .children {
     display: none; }
@@ -5661,22 +5666,29 @@ button.close {
   .barra-de-navegacion nav ul li .children li a {
     margin-left: 20px; }
 
+  .barra-de-navegacion nav ul li .children li :hover {
+    background-color: red; }
+
   .barra-de-navegacion nav ul li .caret {
     float: right; } }
+/*celular*/
 .boton2 {
   width: 30%;
   background-color: rgba(249, 6, 13, 0.84);
   padding: 8px;
   border-radius: 14px;
-  margin-bottom: 10%;
   color: white;
   left: 64%;
   position: absolute;
-  top: 20px; }
+  top: 14px;
+  text-align: center; }
   .boton2 h3 {
     margin: 0;
     font-size: 13px;
     font-family: Lato; }
+
+header.texto {
+  padding: 6% 0; }
 
 /*section*/
 .row {
@@ -5710,9 +5722,12 @@ button.close {
     font-size: 33px; }
   .articulos .list ul {
     list-style: none;
-    padding: 20px 0 0 25px; }
+    padding: 15px 42px 15px 34px;
+    background-color: #efefef;
+    margin: 13px; }
     .articulos .list ul li {
-      margin: 5% 0; }
+      margin: 5% 0;
+      border-bottom: 1px solid #cecbcb; }
   .articulos .ultimos {
     margin: 30% 0 0 0; }
     .articulos .ultimos h1 {
@@ -5721,13 +5736,36 @@ button.close {
       font-size: 33px; }
     .articulos .ultimos .foto {
       text-align: center;
-      padding: 10% 0 5%; }
+      padding: 10% 0 5%;
+      z-index: 15; }
       .articulos .ultimos .foto img {
-        width: 20%; }
+        width: 20%;
+        z-index: 15; }
     .articulos .ultimos h2 {
       padding: 6% 19% 10%;
       margin: 0;
       font-size: 18px; }
+    .articulos .ultimos .art {
+      position: relative;
+      top: -23px;
+      background: #eeeeee; }
+
+.blog-farolito {
+  padding: 7%;
+  text-align: center;
+  background: #f3f3f3; }
+  .blog-farolito .BF {
+    padding: 9% 0;
+    color: grey; }
+  .blog-farolito .todo {
+    padding: 10% 0; }
+    .blog-farolito .todo h2 {
+      font-size: 20px;
+      color: grey; }
+
+.todo:hover {
+  background-color: yellow;
+  color: white; }
 
 .muchotexto {
   line-height: 35px;
